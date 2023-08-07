@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-white: rgb(255, 255, 255);
+    --color-headings: rgb(52, 53, 91);
+    --color-bg-input: rgb(220, 226, 233);
+    --color-bg-btn: rgb(120, 121, 241);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(315deg, #C2E9FB 0%, #A1C4FD 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--color-base-white);
+    width: min(42.8rem, 90%);
+    margin: 0 auto;
+    margin-top: 12rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    text-align: center;
+    border-radius: .6rem;
+}
+
+h1, h2 {
+    color: var(--color-headings);
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h2, p {
+    line-height: 150%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+label {
+    display: none;
+}
+
+p {
+    margin-top: 1.6rem;
+    margin-bottom: 4.8rem;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-base-white);
+    background-color: var(--color-bg-btn);
+    border: 0;
+    border-radius: 0 .4rem .4rem 0;
+    padding: 1.6rem;
+}
+
+input {
+    background-color: var(--color-bg-input);
+    border: 0;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 1.6rem;
+    width: 25%;
+}
+
+.hide {
+    display: none;
+}
+
+.play-again button {
+    margin-top: 3.3rem;
+    border-radius: .4rem;
+}
