@@ -11,6 +11,7 @@
     --color-headings: rgb(52, 53, 91);
     --color-bg-input: rgb(220, 226, 233);
     --color-bg-btn: rgb(120, 121, 241);
+    --color-bg-btn-hover: rgb(100, 100, 202);
 }
 
 body {
@@ -53,16 +54,12 @@ p {
     font-size: 1.6rem;
 }
 
-label {
-    display: none;
-}
-
 p {
     margin-top: 1.6rem;
     margin-bottom: 4.8rem;
 }
 
-.input-wrapper {
+form {
     display: flex;
     gap: 0;
     justify-content: center;
@@ -91,7 +88,12 @@ input {
     display: none;
 }
 
-.play-again button {
+.guess-again button {
     margin-top: 3.3rem;
     border-radius: .4rem;
+}
+
+button:hover {
+    background-color: var(--color-bg-btn-hover);
+    cursor: pointer;
 }
